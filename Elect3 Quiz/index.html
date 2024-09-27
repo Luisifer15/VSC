@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="landing-page">
+        <h1>Welcome to the Web Development Quiz</h1>
+        <p>Test your knowledge on basic web development topics!</p>
+        <button id="start-quiz">Start Quiz</button>
+    </main>
+    
+    <section id="quiz-section" style="display: none;">
+        
+        <div id="correct-feedback" class="feedback" style="display: none;">
+            <p>Correct!</p>
+        </div>
+        <div id="incorrect-feedback" class="feedback" style="display: none;">
+            <p>Incorrect!</p>
+        </div>
+        <div id="no-answer-feedback" class="feedback" style="display: none;">
+            <p>Please select an answer.</p>
+        </div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <form id="quiz-form">
+            <fieldset id="q1">
+                <legend>1. What does HTML stand for?</legend>
+                <label><input type="radio" name="q1" value="correct"> Hypertext Markup Language</label><br>
+                <label><input type="radio" name="q1" value="wrong"> High-Tech Markup Language</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Home Tool Markup Language</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Hyper Transfer Markup Language</label><br>
+            </fieldset>
+
+            <fieldset id="q2" style="display:none;">
+                <legend>2. What does CSS stand for?</legend>
+                <label><input type="radio" name="q2" value="correct"> Cascading Style Sheets</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Computer Style Sheets</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Creative Style Sheets</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Colorful Style Sheets</label><br>
+            </fieldset>
+
+            <fieldset id="q3" style="display:none;">
+                <legend>3. Which is a JavaScript framework?</legend>
+                <label><input type="radio" name="q3" value="correct"> React</label><br>
+                <label><input type="radio" name="q3" value="wrong"> HTML</label><br>
+                <label><input type="radio" name="q3" value="wrong"> CSS</label><br>
+                <label><input type="radio" name="q3" value="wrong"> JSON</label><br>
+            </fieldset>
+
+            <fieldset id="q4" style="display:none;">
+                <legend>4. What does DOM stand for?</legend>
+                <label><input type="radio" name="q4" value="correct"> Document Object Model</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Digital Object Model</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Data Object Mode</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Dynamic Object Model</label><br>
+            </fieldset>
+
+            <fieldset id="q5" style="display:none;">
+                <legend>5. What is the purpose of jQuery?</legend>
+                <label><input type="radio" name="q5" value="correct"> Simplify JavaScript coding</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Create databases</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Design websites</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Style web pages</label><br>
+            </fieldset>
+
+            <button class="submit-btn" type="button">Submit Answer</button>
+        </form>
+    </section>
+
+    <section id="score-card" style="display: none;">
+        <h2 id="score"></h2>
+        <p>Click the button below to restart the quiz</p>
+        <button id="restart-quiz">Restart Quiz</button>
+    </section>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
