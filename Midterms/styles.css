@@ -1,0 +1,411 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+h1, h2, h3, p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ff003c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Centering Content */
+main {
+  max-width: 70%; /* Adjusting width for a centered layout */
+  margin: 0 auto; /* Center the main content */
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #262626;
+  border-bottom: 5px solid #ff003c;
+}
+
+.header h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ff003c;
+}
+
+.subheader {
+  font-size: 16px;
+  font-style: italic;
+  color: #d4d4d4; /* Keeping a softer contrast */
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 36px;
+  border-bottom: 2px solid #ff003c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #ff003c;
+}
+
+/* Flexbox Grid Layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-box {
+  background-color: #333;
+  padding: 20px;
+  width: calc(25% - 20px); /* Adjusting to fit 4 boxes per row */
+  border: 2px solid #ff003c;
+  box-shadow: 5px 5px 0px #000;
+  color: #d4d4d4;
+}
+
+.skills-box h3 {
+  font-size: 22px;
+  color: #ff003c;
+  margin-bottom: 10px;
+}
+
+.skills-box ul {
+  list-style-type: none;
+}
+
+.skills-box li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ff003c;
+}
+
+.specialty {
+  font-size: 14px;
+  color: #d4d4d4;
+  background-color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.specialty:hover {
+  background-color: #ff003c;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Projects Section */
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.projects h2 {
+  font-size: 36px;
+  color: #ff003c;
+  margin: 0; /* Remove margin to align with the search bar */
+  padding: 0;
+}
+
+#search-bar {
+  width: 30%; /* Set the width to 30% */
+  padding: 8px; /* Padding inside the input */
+  font-size: 16px;
+  border: 1px solid #ff003c;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  text-align: left; /* Align text to the left inside the input */
+  margin-left: auto; /* Push the search bar to the right */
+  margin-bottom: 20px;
+}
+
+#search-bar::placeholder {
+  color: #d4d4d4; /* Placeholder text color */
+}
+
+#search-bar:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #ff3366; /* Change border color on focus */
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Distributes space evenly */
+}
+
+.project-box {
+  background-color: #333;
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Ensures 3 boxes per row with spacing */
+  border: 2px solid #ff003c;
+  box-shadow: 5px 5px 0px #000;
+  color: #d4d4d4;
+  margin: 10px; /* Adds spacing between rows */
+}
+
+.project-box h3 {
+  font-size: 22px;
+  color: #ff003c;
+  margin-bottom: 10px;
+}
+
+.project-box p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px 10px;
+  background-color: #ff003c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #ff3366;
+}
+
+.project-links a:active {
+  background-color: #ff003c;
+  transform: scale(0.98);
+}
+
+/* Box Styles */
+.box {
+  background-color: #262626;
+  padding: 20px;
+  border: 2px solid #ff003c;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+.large {
+  padding: 30px;
+}
+
+/* About */
+.about-content {
+  display: flex; /* Align boxes horizontally */
+  flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+  justify-content: space-between; /* Space out the boxes */
+}
+
+.about-box {
+  background-color: #1c1c1c; /* Darker box background for contrast */
+  border: 2px solid #ff003c; /* Solid border to match skills section */
+  padding: 10px; /* Padding around the content */
+  margin: 10px; /* Margin around the boxes */
+  flex: 1; /* Allow boxes to grow */
+  min-width: 300px; /* Minimum width for boxes */
+}
+
+.profile-layout {
+  display: flex; /* Align image and text side by side */
+}
+
+.profile-image {
+  width: 150px; /* Fixed width for image */
+  height: 150px; /* Fixed height for image to ensure 1:1 ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-right: 20px; /* Space between image and text */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Hide any overflow if necessary */
+}
+
+.profile-image img {
+  width: 100%; /* Fill the width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.bio-content {
+  flex: 1; /* Allow the bio content to fill the remaining space */
+}
+
+.name {
+  font-size: 24px; /* Name font size */
+  color: #ff003c; /* Name color to match border */
+  margin: 10px 0; /* Margin above and below the name */
+}
+
+.divider {
+  height: 2px; /* Height of the divider */
+  background-color: #ff003c; /* Color of the divider */
+  margin: 10px 0; /* Margin above and below the divider */
+}
+
+/* Optional: Adjust text color in the biography */
+.about-box p {
+  color: #d4d4d4; /* Text color for bio */
+  font-size: 16px; /* Font size for bio text */
+}
+
+/* Heading color */
+.about-box h3 {
+  color: #ff003c; /* Color for section headings */
+}
+
+
+.contact-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #262626;
+  border: 2px solid #ff003c;
+  color: #d4d4d4;
+}
+
+.contact-section h2 {
+  color: #ff003c;
+  margin-bottom: 20px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the two boxes */
+  padding: 10px;
+}
+
+.message-box,
+.form-box {
+  flex: 1; /* Allow boxes to take equal space */
+  padding: 20px;
+  border: 2px solid #ff003c;
+}
+
+.message-box h3,
+.form-box h3 {
+  color: #ff003c;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block; /* Makes the links behave like buttons */
+  margin-right: 15px;
+  padding: 10px 15px; /* Adding padding for better click area */
+  background-color: #ff003c; /* Background color to match theme */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 25px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.social-links a:hover {
+  background-color: #ff3366; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.social-links a:active {
+  transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ff003c;
+  border-radius: 4px;
+  background-color: #444; /* Slightly lighter for distinction */
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background-color: #ff003c;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff3366;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .project-box {
+    width: calc(50% - 20px); /* 2 boxes per row on medium screens */
+  }
+  .about-content {
+    flex-direction: column; /* Stacks boxes vertically on small screens */
+  }
+  .profile-layout {
+      flex-direction: column; /* Stack image and text on smaller screens */
+      align-items: center; /* Center the items */
+  }
+  .profile-image {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 20px; /* Add bottom margin */
+  }
+  .skills-box {
+    width: calc(50% - 20px); /* Adjust to fit 2 boxes per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-box,
+  .project-box {
+    width: 100%; /* Full width on small screens */
+  }
+}

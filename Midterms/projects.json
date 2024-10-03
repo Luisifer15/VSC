@@ -1,0 +1,32 @@
+[
+    {
+      "name": "RentaRide",
+      "description": "All in one renting solution for owners, managers, and renters",
+      "liveLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "repoLink": "https://github.com/pjgrspe/RentaRide"
+    },
+    {
+      "name": "ICE Password Repository",
+      "description": "Feature rich password repository",
+      "liveLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "repoLink": "https://github.com/pjgrspe/NetRunners-Password-Repository"
+    },
+    {
+      "name": "Android RPG Game",
+      "description": "RPG Game written for Android devices",
+      "liveLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "repoLink": "https://github.com/pjgrspe/RPGGame_GorospeRimando"
+    },
+    {
+      "name": "Random School Work Projects",
+      "description": "Various school works and projects that I have done in the past.",
+      "liveLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "repoLink": "https://github.com/Luisifer15/School-works"
+    },
+    {
+      "name": "CSS Design testing",
+      "description": "Testing and learning CSS design and animations.",
+      "liveLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "repoLink": "https://github.com/Luisifer15/UI-Testing"
+    }
+]
